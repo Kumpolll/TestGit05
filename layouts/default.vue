@@ -1,0 +1,27 @@
+<template>
+    <div>
+        <header class="shadow-sm bg-white">
+            <nav class="container mx-auto p-4 flex justify-between">
+                <NuxtLink to="/" class="font-bold">Four Archons</NuxtLink>
+                <ul class="flex gap-4">
+                    <li><NuxtLink to="/">Home</NuxtLink></li>
+                    <li><NuxtLink to="/barbatos">Barbatos</NuxtLink></li>
+                    <li><NuxtLink to="/morax">Morax</NuxtLink></li>
+                    <li><NuxtLink to="/beelzebub">Beelzebub</NuxtLink></li>
+                    <li><NuxtLink to="/buer">buer</NuxtLink></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- page content go here -->
+        <div class="container mx-auto p-4">
+            <slot />
+        </div>
+    </div>
+</template>
+
+<style scoped>
+    .router-link-exact-active {
+        color: #a1b412;
+    }
+</style>
